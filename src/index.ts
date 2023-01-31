@@ -1,5 +1,3 @@
-import { addListener } from 'process';
-import { title } from 'process';
 import { v4 as uuidV4 } from 'uuid';
 
 type Task = { 
@@ -38,5 +36,5 @@ function addListItem(task: Task) {
   checkbox.type = "checkbox"
   label.append(checkbox, task.title)
   item.append(label)
-  list?.append()
+  list?.append(item)
 }
